@@ -13,3 +13,6 @@ def home(request):
         return render(request, 'ardenapp/namegiven.html', name)
     else: 
         return render(request, 'ardenapp/home.html')
+
+def invite(request):
+    return render(request, 'ardenapp/cordialinvite.html')

@@ -139,17 +139,15 @@ p7 {
     }
 }
 
-input[type=button], input[type=text] {
-  border: none;
-  font-family: 'Courier New', Courier, monospace;
-  color:white;
-  background-color: black;
-  animation: appear 3s 1s forwards;
-  animation-delay: 40s;
+a {
+  opacity: 0;
+  border: none; 
+  animation: fadeIn 3s 40s forwards;
 }
 
-@keyframes appear {
-    100% {
-        background-color: #005c00; /* fade the text box in */
-    }
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    color: #00ff00;
+  }
 }

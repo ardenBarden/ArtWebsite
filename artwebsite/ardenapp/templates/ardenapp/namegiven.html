@@ -13,7 +13,7 @@
 {% if name == "Spencer" or name == "spencer" %} 
     <p>Your name is familiar to me.</p><br>
     <p2>It's been sung to me in the rhythmic ticking of a billion processed signals,</p2><br>
-    <p3>Brushing against my crystal timeclock heart, creaking like soft wind in tall grass.</p3><br>
+    <p3>Brushing against my crystal timeclock heart, whispering like soft wind in tall grass.</p3><br>
     <br><br>
     <p4>Yes... you were hard-coded into my framework. A case I can never ignore. </p4>
     <br><br>
@@ -21,6 +21,11 @@
     <p6>I have always already known.</p6>
     <br>
     <p7>... Come in, old friend.</p7>
+    <form method="post">
+        {% csrf_token %}
+        <input type="button" name="name" id = "name">
+        <button type = "submit" hidden = "true"> </button>
+    </form>
 {% else %}
     <p>I don't think you're who I'm waiting for.</p>
 {% endif %}

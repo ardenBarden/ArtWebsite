@@ -21,9 +21,9 @@ p {
     border-right: .15em solid transparent; /* Cursor effect */
     white-space: nowrap;
     width: 0;
-    animation: typing2 2s steps(60) 1s forwards, blink2 0.75s step-end infinite;
+    animation: typing2 3s steps(60) 1s forwards, blink2 0.75s step-end 5;
     animation-delay: 4s;
-    --line-length: 30%;
+    --line-length: 35%;
 }
 
 p2 {
@@ -32,7 +32,7 @@ p2 {
     border-right: .15em solid transparent; /* Cursor effect */
     white-space: nowrap;
     width: 0;
-    animation: typing2 5s steps(60) 1s forwards, blink2 0.75s step-end infinite;
+    animation: typing2 5s steps(100) 1s forwards, blink2 0.75s step-end 7;
     animation-delay: 8s;
     --line-length: 60%
 }
@@ -43,7 +43,7 @@ p3 {
     border-right: .15em solid transparent; /* Cursor effect */
     white-space: nowrap;
     width: 0;
-    animation: typing2 5s steps(60) 1s forwards, blink2 0.75s step-end infinite;
+    animation: typing2 5s steps(100) 1s forwards, blink2 0.75s step-end 9;
     animation-delay: 13s;
     --line-length: 70%;
 }
@@ -54,7 +54,7 @@ p4 {
     border-right: .15em solid transparent; /* Cursor effect */
     white-space: nowrap;
     width: 0;
-    animation: typing2 5s steps(60) 1s forwards, blink2 0.75s step-end infinite;
+    animation: typing2 5s steps(60) 1s forwards, blink2 0.75s step-end 8;
     animation-delay: 20s;
     --line-length: 60%
 }
@@ -65,7 +65,7 @@ p5 {
     border-right: .15em solid transparent; /* Cursor effect */
     white-space: nowrap;
     width: 0;
-    animation: typing2 4s steps(60) 1s forwards, blink2 0.75s step-end infinite;
+    animation: typing2 4s steps(60) 1s forwards, blink2 0.75s step-end 7;
     animation-delay: 27s;
     --line-length: 45%;
 }
@@ -76,7 +76,7 @@ p6 {
     border-right: .15em solid transparent; /* Cursor effect */
     white-space: nowrap;
     width: 0;
-    animation: typing2 2s steps(60) 1s forwards, blink2 0.75s step-end infinite;
+    animation: typing2 2s steps(60) 1s forwards, blink2 0.75s step-end 7;
     animation-delay: 33s;
     --line-length: 25%
 }
@@ -139,3 +139,17 @@ p7 {
     }
 }
 
+input[type=button], input[type=text] {
+  border: none;
+  font-family: 'Courier New', Courier, monospace;
+  color:white;
+  background-color: black;
+  animation: appear 3s 1s forwards;
+  animation-delay: 40s;
+}
+
+@keyframes appear {
+    100% {
+        background-color: #005c00; /* fade the text box in */
+    }
+}

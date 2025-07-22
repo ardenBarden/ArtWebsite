@@ -1,24 +1,47 @@
 /* Apply a monospace font to the entire page */
 body {
     font-family: 'Courier New', Courier, monospace;
+    color: #00ff00;
+    background-color: black;
 }
 
-/* Typewriter effect for the 'Hello World!' heading */
+/* Typewriter effect for the heading */
 h1 {
     display: inline-block;
     overflow: hidden;
-    border-right: .15em solid black; /* Cursor effect */
+    border-right: .15em solid #00ff00; /* Cursor effect */
     white-space: nowrap;
-    animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
+    width: 0;
+    animation: typingh 3s steps(20) 3s forwards, blink 0.75s step-end infinite, hideCursor 0s 8s forwards;
 }
 
-/* Keyframe for typing animation */
+/* Typewriter effect for the heading */
+p {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid transparent; /* Cursor effect */
+    white-space: nowrap;
+    width: 0;
+    animation: typing 3s steps(30) 1s forwards, blink2 0.75s step-end infinite;
+    animation-delay: 8s
+}
+
+/* Keyframe for typing title animation */
+@keyframes typingh {
+    from {
+        width: 0;
+    }
+    to {
+        width: 20%;
+    }
+}
+/* Keyframe for typing body animation */
 @keyframes typing {
     from {
         width: 0;
     }
     to {
-        width: 25%;
+        width: 30%;
     }
 }
 
@@ -26,5 +49,18 @@ h1 {
 @keyframes blink {
     50% {
         border-color: transparent;
+    }
+}
+
+/* Keyframe for cursor blinking */
+@keyframes blink2 {
+    50% {
+        border-color: #00ff00;
+    }
+}
+
+@keyframes hideCursor {
+    100% {
+        border-color: transparent; /* Hides the cursor after typing */
     }
 }

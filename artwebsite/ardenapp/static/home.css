@@ -12,7 +12,7 @@ h1 {
     border-right: .15em solid #00ff00; /* Cursor effect */
     white-space: nowrap;
     width: 0;
-    animation: typingh 3s steps(20) 3s forwards, blink 0.75s step-end infinite, hideCursor 0s 8s forwards;
+    animation: typingh 1.5s steps(20) 3s forwards, blink 0.75s step-end infinite, hideCursor 0s 6s forwards;
 }
 
 /* Typewriter effect for the heading */
@@ -23,7 +23,7 @@ p {
     white-space: nowrap;
     width: 0;
     animation: typing 3s steps(30) 1s forwards, blink2 0.75s step-end infinite;
-    animation-delay: 8s
+    animation-delay: 6s
 }
 
 /* Keyframe for typing title animation */
@@ -62,5 +62,21 @@ p {
 @keyframes hideCursor {
     100% {
         border-color: transparent; /* Hides the cursor after typing */
+    }
+}
+
+input[type=text], input[type=button] {
+  width: 20%;
+  border: none;
+  font-family: 'Courier New', Courier, monospace;
+  color:white;
+  background-color: black;
+  animation: appear 3s 1s forwards;
+  animation-delay: 8s;
+}
+
+@keyframes appear {
+    100% {
+        background-color: #005c00; /* fade the text box in */
     }
 }

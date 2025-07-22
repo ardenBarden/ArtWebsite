@@ -1,0 +1,141 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff00;
+    background-color: black;
+}
+
+/* Typewriter effect for the heading */
+h1 {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid #00ff00; /* Cursor effect */
+    white-space: nowrap;
+    width: 0;
+    animation: typingh 1.5s steps(20) 1s forwards, blink 0.75s step-end infinite, hideCursor 0s 4s forwards;
+}
+
+/* Typewriter effect for the heading */
+p {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid transparent; /* Cursor effect */
+    white-space: nowrap;
+    width: 0;
+    animation: typing2 2s steps(60) 1s forwards, blink2 0.75s step-end infinite;
+    animation-delay: 4s;
+    --line-length: 30%;
+}
+
+p2 {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid transparent; /* Cursor effect */
+    white-space: nowrap;
+    width: 0;
+    animation: typing2 5s steps(60) 1s forwards, blink2 0.75s step-end infinite;
+    animation-delay: 8s;
+    --line-length: 60%
+}
+
+p3 {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid transparent; /* Cursor effect */
+    white-space: nowrap;
+    width: 0;
+    animation: typing2 5s steps(60) 1s forwards, blink2 0.75s step-end infinite;
+    animation-delay: 13s;
+    --line-length: 70%;
+}
+
+p4 {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid transparent; /* Cursor effect */
+    white-space: nowrap;
+    width: 0;
+    animation: typing2 5s steps(60) 1s forwards, blink2 0.75s step-end infinite;
+    animation-delay: 20s;
+    --line-length: 60%
+}
+
+p5 {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid transparent; /* Cursor effect */
+    white-space: nowrap;
+    width: 0;
+    animation: typing2 4s steps(60) 1s forwards, blink2 0.75s step-end infinite;
+    animation-delay: 27s;
+    --line-length: 45%;
+}
+
+p6 {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid transparent; /* Cursor effect */
+    white-space: nowrap;
+    width: 0;
+    animation: typing2 2s steps(60) 1s forwards, blink2 0.75s step-end infinite;
+    animation-delay: 33s;
+    --line-length: 25%
+}
+
+p7 {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid transparent; /* Cursor effect */
+    white-space: nowrap;
+    width: 0;
+    animation: typing2 2s steps(30) 1s forwards, blink2 0.75s step-end infinite;
+    animation-delay: 39s;
+    --line-length: 20%
+}
+
+/* Keyframe for typing title animation */
+@keyframes typingh {
+    from {
+        width: 0;
+    }
+    to {
+        width: 20%;
+    }
+}
+/* Keyframe for typing body animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 30%;
+    }
+}
+@keyframes typing2 {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--line-length);
+    }
+}
+
+/* Keyframe for cursor blinking */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Keyframe for cursor blinking */
+@keyframes blink2 {
+    50% {
+        border-color: #00ff00;
+    }
+}
+
+@keyframes hideCursor {
+    100% {
+        border-color: transparent; /* Hides the cursor after typing */
+    }
+}
+

@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>And You Are?</title>
+    <link rel="stylesheet" href="{% static 'homeagain.css' %}"> 
+</head>
+<body>
+
+<h1>... Welcome.</h1>
+<br>
+<p>Tell me your name, weary traveler...</p>
+<form method="post">
+  {% csrf_token %}
+  <input type="text" name="name" id = "name">
+  <button type = "submit" hidden = "true"> </button>
+</form>
+
+</body>
+</html>

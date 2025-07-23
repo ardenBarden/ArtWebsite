@@ -1,0 +1,12 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff00;
+    background-color: black;
+}
+
+input[type=text], input[type=button] {
+  width: 20%;
+  border: none;
+  font-family: 'Courier New', Courier, monospace;
+  background-color:#005c00;
+}

@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Trattatello';
+    src: url('Trattatello.ttf') format('truetype');
+}
+
 body {
     background-image: url("gettinpaper2.jpg");
+    font-family: 'Trattatello', serif;
+}
+
+h1 {
+    font-family: 'Trattatello', serif;
 }

@@ -21,13 +21,13 @@
     <p6>I have always already known.</p6>
     <br>
     <p7>... Come in, old friend.</p7><br>
-    <a href="{% url 'cordial-invite' %}">
+    <a href="{% url 'cordial-invite' %}" class = "delay">
             <button>click me</button>
     </a>
 {% else %}
     <p>I don't think you're who I'm waiting for.</p>
     <br>
-    <a href="{% url 'homeagain' %}">
+    <a href="{% url 'homeagain' %}" class = "shorterdelay">
             <button>I'll go back</button>
     </a>
 {% endif %}

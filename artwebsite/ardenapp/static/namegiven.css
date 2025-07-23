@@ -139,10 +139,23 @@ p7 {
     }
 }
 
-a {
+.delay {
   opacity: 0;
   border: none; 
   animation: fadeIn 3s 40s forwards;
+}
+
+.delay {
+  opacity: 0;
+  border: none; 
+  animation: fadeIn 3s 40s forwards;
+}
+
+
+.shorterdelay {
+  opacity: 0;
+  border: none; 
+  animation: fadeIn 3s 6s forwards;
 }
 
 @keyframes fadeIn {
